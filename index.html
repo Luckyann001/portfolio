@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Luckyann Kagendo | Technology Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Luckyann Kagendo — software engineering, cybersecurity, AI and computer science portfolio." />
+  <meta name="author" content="Luckyann Kagendo" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0F0F14',
+            primary: '#C084FC',
+            secondary: '#F472B6',
+            muted: '#9CA3AF'
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-bg text-gray-200 font-body">
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar" class="fixed top-0 w-full z-50 bg-bg/80 backdrop-blur border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <span class="font-heading text-primary text-lg">
+      Luckyann Kagendo
+    </span>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-8 text-sm text-muted">
+      <a href="#about" class="hover:text-primary">About</a>
+      <a href="#skills" class="hover:text-primary">Skills</a>
+      <a href="#projects" class="hover:text-primary">Projects</a>
+      <a href="#certifications" class="hover:text-primary">Certificates</a>
+      <a href="#contact" class="hover:text-primary">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="md:hidden text-muted">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-bg border-t border-white/5">
+    <nav class="flex flex-col px-6 py-6 gap-4 text-muted">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#certifications" class="mobile-link">Certificates</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="min-h-screen flex items-center justify-center px-6 pt-32 text-center">
+  <div class="max-w-4xl space-y-6 reveal opacity-0 translate-y-6 transition-all duration-700">
+
+    <!-- Centered Profile Image -->
+    <div class="flex justify-center">
+      <img src="assets/profile.jpg"
+           alt="Luckyann Kagendo"
+           class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover
+                  border-4 border-primary/40 shadow-xl">
+    </div>
+
+    <p class="uppercase tracking-widest text-secondary text-sm">
+      Technology • Curiosity • Growth
+    </p>
+
+    <h1 class="font-heading text-4xl md:text-6xl text-primary">
+      Luckyann Kagendo
+    </h1>
+
+    <p class="text-muted text-lg max-w-2xl mx-auto">
+      A technology-driven problem solver exploring software engineering,
+      cybersecurity, artificial intelligence, and computer science.
+    </p>
+
+    <div class="flex justify-center gap-4 pt-6 flex-wrap">
+      <a href="cv/Luckyann_Kagendo_CV.pdf"
+         class="px-6 py-3 rounded-full bg-primary text-bg font-medium hover:opacity-90 transition"
+         download>
+        Download CV
+      </a>
+
+      <a href="#projects"
+         class="px-6 py-3 rounded-full border border-primary text-primary hover:bg-primary hover:text-bg transition">
+        View Projects
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24 px-6 max-w-5xl mx-auto reveal opacity-0 translate-y-6 transition-all duration-700">
+  <h2 class="font-heading text-3xl text-primary mb-6">About Me</h2>
+
+  <div class="space-y-5 text-muted text-lg">
+    <p>
+      I am a deeply curious and driven technology enthusiast with a growing focus on
+      how digital systems are designed, built, secured, and scaled. My journey began
+      with software engineering, where I developed a strong appreciation for clean
+      code, structured problem-solving, and user-centered design.
+    </p>
+
+    <p>
+      As my interest expanded, I became drawn to cybersecurity—understanding how
+      systems fail, how vulnerabilities are exploited, and how technology can be
+      protected against evolving threats. In parallel, I am exploring artificial
+      intelligence and computer science fundamentals to strengthen my analytical
+      thinking and deepen my understanding of how intelligent systems work at a core
+      level.
+    </p>
+
+    <p>
+      Beyond technical ability, I value discipline, clarity, adaptability, and
+      continuous learning. I approach challenges with intention, balance creativity
+      with logic, and believe technology should be both powerful and responsible.
+      This portfolio reflects not just what I can build today, but the direction I am
+      deliberately growing toward.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
+  <h2 class="font-heading text-3xl text-primary mb-12 text-center">
+    Skills & Expertise
+  </h2>
+
+  <!-- Technical Skills -->
+ <section id="skills" class="py-20">
+  <h2 class="text-3xl font-semibold mb-12 text-center">Technical Skills</h2>
+
+  <!-- SOFTWARE & WEB DEV -->
+  <h3 class="text-xl text-secondary mb-6">Software & Web Development</h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <!-- Frontend -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="layout" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">Frontend Development</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          HTML (Semantic, Accessibility)
+          <span class="block text-xs text-secondary">Intermediate – 80%</span>
+          <div class="progress-bar" data-level="80"></div>
+        </li>
+
+        <li>
+          CSS (Responsive, Flexbox, Grid)
+          <span class="block text-xs text-secondary">Intermediate – 80%</span>
+          <div class="progress-bar" data-level="80"></div>
+        </li>
+
+        <li>
+          Tailwind CSS
+          <span class="block text-xs text-secondary">Intermediate – 80%</span>
+          <div class="progress-bar" data-level="80"></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="braces" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">JavaScript</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          Core JavaScript
+          <span class="block text-xs text-secondary">advanced – 97%</span>
+          <div class="progress-bar" data-level="97"></div>
+        </li>
+
+        <li>
+          DOM Manipulation
+          <span class="block text-xs text-secondary">advanced – 95%</span>
+          <div class="progress-bar" data-level="95"></div>
+        </li>
+      </ul>
+
+     <h6 class="text-lg font-medium">FRAMEWORKS & LIBRARIES</h6>
+    <li>
+        React.js
+        <span class="block text-xs text-secondary">advanced – 90%</span>
+        <div class="progress-bar" data-level="90"></div>
+    </li>
+    </div>
+
+
+    <!-- Python -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="database" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">Python</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          Python Fundamentals
+          <span class="block text-xs text-secondary">intermediate – 80%</span>
+          <div class="progress-bar" data-level="80"></div>
+        
+        <li>
+            FRAMEWORKS & LIBRARIES
+        
+        <li>
+          Flask 
+          <span class="block text-xs text-secondary">intermediate – 80%</span>
+          <div class="progress-bar" data-level="80"></div>
+        </li>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Ruby -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="gem" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">Ruby</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          Ruby Fundamentals
+          <span class="block text-xs text-secondary">Beginner – 25%</span>
+          <div class="progress-bar" data-level="25"></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- CYBERSECURITY -->
+  <h3 class="text-xl text-secondary mb-6">Cybersecurity</h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="shield-check" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">Security Fundamentals</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          Networking Basics
+          <span class="block text-xs text-secondary">Beginner – 30%</span>
+          <div class="progress-bar" data-level="30"></div>
+        </li>
+
+        <li>
+          Threat Awareness
+          <span class="block text-xs text-secondary">Beginner – 30%</span>
+          <div class="progress-bar" data-level="30"></div>
+        </li>
+
+        <li>
+          System Security Concepts
+          <span class="block text-xs text-secondary">Beginner – 30%</span>
+          <div class="progress-bar" data-level="30"></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ARTIFICIAL INTELLIGENCE -->
+  <h3 class="text-xl text-secondary mb-6">Artificial Intelligence</h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="cpu" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">AI Foundations</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          AI Concepts & Terminology
+          <span class="block text-xs text-secondary">Beginner – 25%</span>
+          <div class="progress-bar" data-level="25"></div>
+        </li>
+
+        <li>
+          Python for AI
+          <span class="block text-xs text-secondary">Beginner – 25%</span>
+          <div class="progress-bar" data-level="25"></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- COMPUTER SCIENCE -->
+  <h3 class="text-xl text-secondary mb-6">Computer Science</h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="book-open" class="text-primary mb-4"></i>
+      <h4 class="text-lg font-medium">CS Foundations</h4>
+
+      <ul class="text-sm text-muted mt-4 space-y-3">
+        <li>
+          Problem Solving
+          <span class="block text-xs text-secondary">Beginner – 35%</span>
+          <div class="progress-bar" data-level="35"></div>
+        </li>
+
+        <li>
+          Algorithms (Intro)
+          <span class="block text-xs text-secondary">Beginner – 30%</span>
+          <div class="progress-bar" data-level="30"></div>
+        </li>
+
+        <li>
+          Data Structures (Intro)
+          <span class="block text-xs text-secondary">Beginner – 30%</span>
+          <div class="progress-bar" data-level="30"></div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Virtual Assistant Skills -->
+  <h3 class="text-xl text-secondary mb-6">Virtual Assistant & Digital Support</h3>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="mail" class="text-primary mb-4"></i>
+      <h4 class="font-medium">Administrative Support</h4>
+      <p class="text-muted text-sm">Email, calendar, documents</p>
+      <span class="text-xs text-secondary">Level: Intermediate</span>
+    </div>
+
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="search" class="text-primary mb-4"></i>
+      <h4 class="font-medium">Research & Data Entry</h4>
+      <p class="text-muted text-sm">Online research, accuracy</p>
+      <span class="text-xs text-secondary">Level: Intermediate</span>
+    </div>
+
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="users" class="text-primary mb-4"></i>
+      <h4 class="font-medium">Client Communication</h4>
+      <p class="text-muted text-sm">Follow-ups, coordination</p>
+      <span class="text-xs text-secondary">Level: Intermediate</span>
+    </div>
+  </div>
+</section>
+<section id="certifications" class="py-24 px-6 bg-[#15151D]">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-heading text-3xl text-primary mb-12 text-center">
+     <!-- Certifications Section -->
+        
+    <section id="certifications" class="py-20">
+  <h2 class="text-3xl font-semibold mb-12 text-center">Certifications & Learning</h2>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- HTML & CSS -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">HTML & CSS Certification</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Fundamentals of web structure, styling, and responsive design.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> W3Schools</li>
+        <li><strong>Category:</strong> Frontend Development</li>
+        <li><strong>Status:</strong> Completed</li>
+      </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">JavaScript Fundamentals</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Core JavaScript concepts including variables, functions, and DOM manipulation.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> W3Schools</li>
+        <li><strong>Category:</strong> Programming</li>
+        <li><strong>Status:</strong> Completed</li>
+      </ul>
+    </div>
+
+    <!-- Python -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">Python Programming</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Python basics including data types, loops, functions, and scripting.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> Online Learning Platform</li>
+        <li><strong>Category:</strong> Programming</li>
+        <li><strong>Status:</strong> Completed / Ongoing</li>
+      </ul>
+    </div>
+
+    <!-- Cybersecurity -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">Cybersecurity Fundamentals</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Introduction to system security, networking, and threat awareness.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> Online Learning Platform</li>
+        <li><strong>Category:</strong> Cybersecurity</li>
+        <li><strong>Status:</strong> Ongoing</li>
+      </ul>
+    </div>
+
+    <!-- AI -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">Artificial Intelligence Basics</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Foundations of AI concepts, data handling, and algorithm understanding.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> Online Learning Platform</li>
+        <li><strong>Category:</strong> Artificial Intelligence</li>
+        <li><strong>Status:</strong> Ongoing</li>
+      </ul>
+    </div>
+
+    <!-- Computer Science -->
+    <div class="bg-[#15151D] p-6 rounded-2xl border border-white/5">
+      <i data-lucide="award" class="text-primary mb-4"></i>
+      <h3 class="text-lg font-medium">Computer Science Foundations</h3>
+
+      <p class="text-sm text-muted mt-2">
+        Core concepts in algorithms, data structures, and problem-solving.
+      </p>
+
+      <ul class="text-xs text-muted mt-4 space-y-1">
+        <li><strong>Provider:</strong> Online Learning Platform</li>
+        <li><strong>Category:</strong> Computer Science</li>
+        <li><strong>Status:</strong> Ongoing</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    
+  <section id="projects" class="py-20">
+  <h2 class="text-3xl font-semibold mb-12 text-center">Projects</h2>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- FRONTEND PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">Personal Portfolio Website</h3>
+
+        <p class="text-sm text-muted mt-3">
+          A responsive personal portfolio showcasing skills, projects, certifications,
+          and career interests with a modern UI.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> HTML, CSS, Tailwind</li>
+          <li><strong>Focus:</strong> Responsive design, UI structure</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Frontend</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">UI/UX</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">Interactive JavaScript Mini Apps</h3>
+
+        <p class="text-sm text-muted mt-3">
+          Small JavaScript projects including form validation, dynamic UI updates,
+          and basic user interaction logic.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> Vanilla JavaScript, DOM</li>
+          <li><strong>Focus:</strong> Events, logic, interactivity</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">JavaScript</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Logic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYTHON PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">Python Automation Scripts</h3>
+
+        <p class="text-sm text-muted mt-3">
+          Beginner-level Python scripts for basic automation tasks,
+          data handling, and problem-solving exercises.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> Python fundamentals</li>
+          <li><strong>Focus:</strong> Logic, scripting</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Python</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Automation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBERSECURITY PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">Cybersecurity Fundamentals Lab</h3>
+
+        <p class="text-sm text-muted mt-3">
+          Practical exercises covering basic networking concepts,
+          security principles, and threat identification scenarios.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> Networking, security concepts</li>
+          <li><strong>Focus:</strong> Threat awareness</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Cybersecurity</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Security</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">AI Learning Experiments</h3>
+
+        <p class="text-sm text-muted mt-3">
+          Introductory AI experiments exploring data handling,
+          basic algorithms, and AI concepts using Python.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> AI fundamentals, Python</li>
+          <li><strong>Focus:</strong> Concept understanding</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">AI</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPUTER SCIENCE PROJECT -->
+    <div class="bg-[#15151D] rounded-2xl border border-white/5 overflow-hidden">
+      <div class="p-6">
+        <h3 class="text-lg font-medium">Problem-Solving & Algorithms</h3>
+
+        <p class="text-sm text-muted mt-3">
+          Algorithm practice and logic-based challenges focusing on
+          problem-solving, efficiency, and computational thinking.
+        </p>
+
+        <ul class="text-xs text-muted mt-4 space-y-1">
+          <li><strong>Skills:</strong> Algorithms, data structures</li>
+          <li><strong>Focus:</strong> Logical thinking</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Computer Science</span>
+          <span class="px-3 py-1 text-xs bg-white/10 rounded-full">Logic</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 px-6 text-center">
+  <h2 class="font-heading text-3xl text-primary mb-6">Let’s Connect</h2>
+  <p class="text-muted mb-6">
+    Open to internships, collaborations, and growth opportunities.
+  </p>
+
+  <div class="flex justify-center gap-6 text-muted">
+    <a href="#" class="hover:text-primary"><i data-lucide="github"></i></a>
+    <a href="#" class="hover:text-primary"><i data-lucide="linkedin"></i></a>
+    <a href="#" class="hover:text-primary"><i data-lucide="mail"></i></a>
+  </div>
+</section>
+
+<footer class="py-6 text-center text-muted border-t border-white/5">
+  © 2025 Luckyann Kagendo
+</footer>
+
+<!-- Scripts -->
+<script src="main.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>
